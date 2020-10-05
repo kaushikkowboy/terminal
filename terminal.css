@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+html,
+body {
+    height: 100%;
+    background-color: rgb(190, 190, 190);
+    background: url(images/macbook2.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.kterm {
+    background-color: black;
+    max-height: 100%;
+    max-width: 100% min-height: 500px;
+    min-width: 600px;
+    height: 550px;
+    width: 750px;
+    border-radius: 8px;
+}
+
+.kterm-top {
+    position: relative;
+    min-height: 2em;
+    cursor: grab;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    border-radius: 8px 8px 0 0;
+    background: rgba(246, 246, 246, 1);
+    background: -moz-linear-gradient(top, rgba(246, 246, 246, 1) 0%, rgba(212, 212, 212, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(212, 212, 212, 1)));
+    background: -webkit-linear-gradient(top, rgba(246, 246, 246, 1) 0%, rgba(212, 212, 212, 1) 100%);
+    background: -o-linear-gradient(top, rgba(246, 246, 246, 1) 0%, rgba(212, 212, 212, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(246, 246, 246, 1) 0%, rgba(212, 212, 212, 1) 100%);
+    background: linear-gradient(to bottom, rgba(246, 246, 246, 1) 0%, rgba(212, 212, 212, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#d4d4d4', GradientType=0);
+}
+
+.kterm-top-buttons {
+    position: absolute;
+    left: 1em;
+    cursor: pointer;
+}
+
+.kterm-top-button {
+    display: inline-block;
+    margin-top: 0.3em;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.28);
+}
+
+.kterm-top-button.red {
+    background: rgb(247, 96, 88);
+    border: 1px solid rgb(225, 70, 63);
+}
+
+.kterm-top-button.yellow {
+    background: rgb(255, 189, 46);
+    border: 1px solid rgb(241, 171, 39);
+}
+
+.kterm-top-button.green {
+    background: rgb(89, 201, 65);
+    border: 1px solid rgb(77, 177, 62);
+}
+
+.kterm-body {
+    color: green;
+    height: 94%;
+    overflow-y: auto;
+}
+.kterm-intro{
+    text-align: center;
+}
+.kterm-intro-top {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.kterm-intro-bottom {
+    font-size: 30px;
+}
+.kterm-type-area{
+    margin-left: 1em;
+}
+.kterm-type-area .time ,
+.kterm-type-area .typing{
+	color: green;
+}
+.kterm-type-area .text{
+	color: white;
+}
+.kterm-type-area .content-type{
+	color: yellow;
+}
+.kterm-type-area .links{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.kterm-type-area .impt , .kterm-type-area .website{
+	color: red;
+	font-weight: bold;
+}
+.kterm-type-area .line div{
+	display: inline-block;
+}
+/*.kterm-type-area .line:last-child {
+    display: inline-block;
+    padding-right: 2px;
+    border-right: 2px solid green;
+    animation: blink-cursor .75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: green;
+    }
+}*/
